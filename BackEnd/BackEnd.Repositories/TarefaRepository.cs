@@ -37,6 +37,7 @@ public class TarefaRepository : BaseRepository, ITarefaRepository
   }
 
 
+  /* Aqui como não temos uma propriedade de navegaçõo direta para usuario em tarefa vamos usar o ANY */
   public async Task<IEnumerable<Tarefa>> ListarPorUsuarioAsync(int usuarioId)
   {
     return await _context.Tarefas
