@@ -20,6 +20,8 @@ public class UsuarioApplication : IUsuarioApplication
 
   public async Task<Usuario> ObterPorIdAsync(int usuarioId)
   {
+    /* Buscamos o ID e armazenamos ele em uma variavel e logo depois conferimos se ela é nula para verificar se tem algum usuario
+    com o parametro ID que foi passado */
     var usuarioIdExistente = await _usuarioRepository.ObterPorIdAsync(usuarioId);
     if (usuarioIdExistente == null)
       throw new Exception("Usuário não encontrado!");

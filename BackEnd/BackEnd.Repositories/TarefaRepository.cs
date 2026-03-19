@@ -22,6 +22,12 @@ public class TarefaRepository : BaseRepository, ITarefaRepository
     }
   }
 
+
+  public async Task<IEnumerable<Tarefa>?> ListarAsync()
+  {
+    return await _context.Tarefas.ToListAsync();
+  }
+
   public async Task<IEnumerable<Tarefa>> ListarPorPrioridadeAsync(PrioridadeTarefa prioridade)
   {
     return await _context.Tarefas

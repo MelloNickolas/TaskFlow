@@ -1,14 +1,24 @@
 using BackEnd.Dominio.Entidades;
 using BackEnd.Dominio.Enumeradores;
 
-public interface ITarefaRepository
+namespace BackEnd.Application;
+
+public interface ITarefaApplication
 {
-  Task<int> SalvarAsync(Tarefa tarefa);
-  Task AtualizarAsync(Tarefa tarefa);
-  Task<Tarefa?> ObterPorIdAsync(int id);
+
+  // READ
+  Task<Tarefa> ObterPorIdAsync(int tarefaId);
   Task<IEnumerable<Tarefa>?> ListarAsync();
   Task<IEnumerable<Tarefa>> ListarPorStatusAsync(StatusTarefa status);
   Task<IEnumerable<Tarefa>> ListarPorPrioridadeAsync(PrioridadeTarefa prioridade);
   Task<IEnumerable<Tarefa>> ListarPorUsuarioAsync(int usuarioId);
+
+  // CREATE
+  Task<int> CriarAsync(Tarefa tarefaDTO);
+
+  // UPDATE
+  Task AtualizarAsync(Tarefa tarefaDTO);
+
+  // DELETE
   Task DeletarAsync(int id);
 }
