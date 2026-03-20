@@ -1,0 +1,298 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj",
+        "projectName": "BackEnd.API",
+        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj",
+        "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj": {
+                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj"
+              },
+              "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
+                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj"
+              },
+              "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj": {
+                "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
+        "projectName": "BackEnd.Application",
+        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
+        "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
+                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj"
+              },
+              "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj": {
+                "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj",
+        "projectName": "Backend.Dominio",
+        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj",
+        "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj",
+        "projectName": "BackEnd.Repositories",
+        "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj",
+        "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
+                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Repositories", "Bac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd.Application", "BackEnd.Application\BackEnd.Application.csproj", "{898BF92B-2CFD-4AC2-90B0-4B3630FE56E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd.API", "BackEnd.API\BackEnd.API.csproj", "{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,18 @@ Global
 		{898BF92B-2CFD-4AC2-90B0-4B3630FE56E9}.Release|x64.Build.0 = Release|Any CPU
 		{898BF92B-2CFD-4AC2-90B0-4B3630FE56E9}.Release|x86.ActiveCfg = Release|Any CPU
 		{898BF92B-2CFD-4AC2-90B0-4B3630FE56E9}.Release|x86.Build.0 = Release|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Debug|x64.Build.0 = Debug|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Debug|x86.Build.0 = Debug|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Release|x64.ActiveCfg = Release|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Release|x64.Build.0 = Release|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{3CDAE803-854B-4DB3-BFB5-C1A4F55572EE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

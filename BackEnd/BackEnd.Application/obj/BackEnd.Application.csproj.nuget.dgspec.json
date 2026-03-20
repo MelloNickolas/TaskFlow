@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj": {}
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj": {
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
+        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
         "projectName": "BackEnd.Application",
-        "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
+        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
         "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\obj\\",
+        "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj": {
-                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj"
+              "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
+                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj"
               },
               "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj": {
                 "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj"
@@ -76,12 +76,12 @@
         }
       }
     },
-    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj": {
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj",
-        "projectName": "BackEnd.Dominio",
-        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj",
+        "projectName": "Backend.Dominio",
+        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj",
         "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\obj\\",
         "projectStyle": "PackageReference",
@@ -157,8 +157,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj": {
-                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj"
+              "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
+                "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj"
               }
             }
           }

@@ -562,21 +562,21 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "BackEnd.Dominio/1.0.0": {
+      "Backend.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/BackEnd.Dominio.dll": {}
+          "bin/placeholder/Backend.Dominio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BackEnd.Dominio.dll": {}
+          "bin/placeholder/Backend.Dominio.dll": {}
         }
       },
       "BackEnd.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "BackEnd.Dominio": "1.0.0",
+          "Backend.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.0"
@@ -1277,10 +1277,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "BackEnd.Dominio/1.0.0": {
+    "Backend.Dominio/1.0.0": {
       "type": "project",
-      "path": "../BackEnd.Dominio/BackEnd.Dominio.csproj",
-      "msbuildProject": "../BackEnd.Dominio/BackEnd.Dominio.csproj"
+      "path": "../BackEnd.Dominio/Backend.Dominio.csproj",
+      "msbuildProject": "../BackEnd.Dominio/Backend.Dominio.csproj"
     },
     "BackEnd.Repositories/1.0.0": {
       "type": "project",
@@ -1291,8 +1291,8 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "BCrypt.Net-Next >= 4.1.0",
-      "BackEnd.Dominio >= 1.0.0",
-      "BackEnd.Repositories >= 1.0.0"
+      "BackEnd.Repositories >= 1.0.0",
+      "Backend.Dominio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1301,11 +1301,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
+      "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
       "projectName": "BackEnd.Application",
-      "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
+      "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\BackEnd.Application.csproj",
       "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\obj\\",
+      "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1320,8 +1320,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj": {
-              "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj"
+            "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
+              "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj"
             },
             "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj": {
               "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj"
