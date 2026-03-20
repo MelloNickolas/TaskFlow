@@ -5,8 +5,15 @@ namespace BackEnd.Application;
 
 public class TarefaApplication : ITarefaApplication
 {
-  readonly ITarefaRepository _tarefaRepository;
-  public TarefaApplication(ITarefaRepository tarefaRepository) { _tarefaRepository = tarefaRepository; }
+
+  /* injetando dependencia para pegar método do usuarioRepository e verificar se o id que vier vai ser null*/
+  private readonly ITarefaRepository _tarefaRepository;
+  private readonly IUsuarioRepository _usuarioRepository;
+  public TarefaApplication(ITarefaRepository tarefaRepository, IUsuarioRepository usuarioRepository)
+  {
+    _tarefaRepository = tarefaRepository;
+    _usuarioRepository = usuarioRepository;
+  }
 
 
   public async Task<Tarefa> ObterPorIdAsync(int tarefaId)
@@ -33,11 +40,13 @@ public class TarefaApplication : ITarefaApplication
 
   public async Task<IEnumerable<Tarefa>> ListarPorStatusAsync(StatusTarefa status)
   {
-   return await _tarefaRepository.ListarPorStatusAsync(status);
+    return await _tarefaRepository.ListarPorStatusAsync(status);
   }
 
   public async Task<IEnumerable<Tarefa>> ListarPorUsuarioAsync(int usuarioId)
   {
+    if(await _usuarioRepository.ObterPorIdAsync(usuarioId) == null)
+      throw new Exception("Não existe nenhum USUÁRIO com esse ID");
     return await _tarefaRepository.ListarPorUsuarioAsync(usuarioId);
   }
 

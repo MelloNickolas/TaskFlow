@@ -18,6 +18,11 @@ public class UsuarioTarefaRepository : BaseRepository, IUsuarioTarefaRepository
     }
   }
 
+  public async Task<UsuarioTarefa?> ObterPorIdAsync(int id)
+  {
+    return await _context.UsuariosTarefas.Where(ut => ut.Id == id).FirstOrDefaultAsync();
+  }
+
   public async Task<IEnumerable<UsuarioTarefa>?> ObterPorTarefaAsync(int tarefaId)
   {
     return await _context.UsuariosTarefas.Where(usuarioTarefa => usuarioTarefa.TarefaId == tarefaId).ToListAsync();
