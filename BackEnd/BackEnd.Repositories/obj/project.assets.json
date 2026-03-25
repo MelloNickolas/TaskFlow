@@ -549,14 +549,14 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Backend.Dominio/1.0.0": {
+      "BackEnd.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Backend.Dominio.dll": {}
+          "bin/placeholder/BackEnd.Dominio.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Backend.Dominio.dll": {}
+          "bin/placeholder/BackEnd.Dominio.dll": {}
         }
       }
     }
@@ -1219,15 +1219,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Backend.Dominio/1.0.0": {
+    "BackEnd.Dominio/1.0.0": {
       "type": "project",
-      "path": "../BackEnd.Dominio/Backend.Dominio.csproj",
-      "msbuildProject": "../BackEnd.Dominio/Backend.Dominio.csproj"
+      "path": "../BackEnd.Dominio/BackEnd.Dominio.csproj",
+      "msbuildProject": "../BackEnd.Dominio/BackEnd.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Backend.Dominio >= 1.0.0",
+      "BackEnd.Dominio >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.0"
@@ -1239,11 +1239,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj",
       "projectName": "BackEnd.Repositories",
-      "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj",
+      "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj",
       "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\obj\\",
+      "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1258,8 +1258,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj": {
-              "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\Backend.Dominio.csproj"
+            "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj": {
+              "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj"
             }
           }
         }

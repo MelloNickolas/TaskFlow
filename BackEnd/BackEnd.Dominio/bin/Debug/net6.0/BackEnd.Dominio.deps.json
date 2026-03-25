@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Backend.Dominio/1.0.0": {
+      "BackEnd.Dominio/1.0.0": {
         "runtime": {
-          "Backend.Dominio.dll": {}
+          "BackEnd.Dominio.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Backend.Dominio/1.0.0": {
+    "BackEnd.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

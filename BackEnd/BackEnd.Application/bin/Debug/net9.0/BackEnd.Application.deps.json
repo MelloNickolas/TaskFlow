@@ -9,8 +9,8 @@
       "BackEnd.Application/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.1.0",
-          "BackEnd.Repositories": "1.0.0",
-          "Backend.Dominio": "1.0.0"
+          "BackEnd.Dominio": "1.0.0",
+          "BackEnd.Repositories": "1.0.0"
         },
         "runtime": {
           "BackEnd.Application.dll": {}
@@ -368,9 +368,9 @@
           "System.Text.Encodings.Web": "6.0.0"
         }
       },
-      "Backend.Dominio/1.0.0": {
+      "BackEnd.Dominio/1.0.0": {
         "runtime": {
-          "Backend.Dominio.dll": {
+          "BackEnd.Dominio.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -378,7 +378,7 @@
       },
       "BackEnd.Repositories/1.0.0": {
         "dependencies": {
-          "Backend.Dominio": "1.0.0",
+          "BackEnd.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.0"
@@ -615,7 +615,7 @@
       "path": "system.text.json/6.0.0",
       "hashPath": "system.text.json.6.0.0.nupkg.sha512"
     },
-    "Backend.Dominio/1.0.0": {
+    "BackEnd.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

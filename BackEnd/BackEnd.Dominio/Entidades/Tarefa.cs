@@ -61,7 +61,7 @@ public class Tarefa
     Titulo = titulo;
   }
 
-  public void DefinirDescricao(string descricao)
+  public void DefinirDescricao(string? descricao)
   {
     Descricao = descricao;
   }

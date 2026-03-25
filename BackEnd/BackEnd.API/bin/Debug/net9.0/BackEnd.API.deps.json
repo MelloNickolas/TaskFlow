@@ -9,8 +9,8 @@
       "BackEnd.API/1.0.0": {
         "dependencies": {
           "BackEnd.Application": "1.0.0",
+          "BackEnd.Dominio": "1.0.0",
           "BackEnd.Repositories": "1.0.0",
-          "Backend.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -371,8 +371,8 @@
       "BackEnd.Application/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.1.0",
-          "BackEnd.Repositories": "1.0.0",
-          "Backend.Dominio": "1.0.0"
+          "BackEnd.Dominio": "1.0.0",
+          "BackEnd.Repositories": "1.0.0"
         },
         "runtime": {
           "BackEnd.Application.dll": {
@@ -381,9 +381,9 @@
           }
         }
       },
-      "Backend.Dominio/1.0.0": {
+      "BackEnd.Dominio/1.0.0": {
         "runtime": {
-          "Backend.Dominio.dll": {
+          "BackEnd.Dominio.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -391,7 +391,7 @@
       },
       "BackEnd.Repositories/1.0.0": {
         "dependencies": {
-          "Backend.Dominio": "1.0.0",
+          "BackEnd.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.0"
@@ -640,7 +640,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Backend.Dominio/1.0.0": {
+    "BackEnd.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

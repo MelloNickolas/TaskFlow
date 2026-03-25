@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vo95LI+kT9k=",
+  "dgSpecHash": "XuMOhOCaWlo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj",
+  "projectFilePath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.api\\BackEnd.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicko\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",
     "C:\\Users\\nicko\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
