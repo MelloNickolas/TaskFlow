@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "BackEnd.Repositories/1.0.0": {
+      "Backend.Repositories/1.0.0": {
         "dependencies": {
           "BackEnd.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.0",
@@ -14,7 +14,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.0"
         },
         "runtime": {
-          "BackEnd.Repositories.dll": {}
+          "Backend.Repositories.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -372,7 +372,7 @@
     }
   },
   "libraries": {
-    "BackEnd.Repositories/1.0.0": {
+    "Backend.Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

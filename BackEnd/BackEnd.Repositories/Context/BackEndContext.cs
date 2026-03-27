@@ -13,13 +13,18 @@ public class BackEndContext : DbContext
 
 
   // Ele vai definir a string de conexao, as opçoes
-  public BackEndContext() {}
-  public BackEndContext(DbContextOptions options) : base(options) {}
+  private readonly DbContextOptions _options;
+  public BackEndContext() { }
+  public BackEndContext(DbContextOptions options) : base(options)
+  {
+    _options = options;
+  }
 
 
   // Ele vai definir o banco de dados que vamos usar,e qual o caminho do arquivo que vamos guardar
   protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
   {
+    if(_options == null)
     optionsBuilder.UseSqlite(@"Filename=./backendTaskFlow.sqlite;");
   }
 

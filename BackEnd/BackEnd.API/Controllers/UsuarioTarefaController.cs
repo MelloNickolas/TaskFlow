@@ -17,6 +17,26 @@ public class UsuarioTarefaController : ControllerBase
     _usuarioTarefaApplication = usuarioTarefaApplication;
   }
 
+    [HttpPost("CriarRelacionamento")]
+    public async Task<ActionResult> CriarRelacionamento([FromBody] UsuarioTarefaCriar usuarioTarefaCriar)
+    {
+      try
+      {
+        var usuarioTarefaDominio = new UsuarioTarefa(usuarioTarefaCriar.UsuarioId, usuarioTarefaCriar.TarefaId);
+        
+        var IdUsuarioTarefa = await _usuarioTarefaApplication.SalvarAsync(usuarioTarefaDominio);
+
+        return Ok(IdUsuarioTarefa);
+      }
+      catch (Exception ex)
+      {
+        var inner = ex.InnerException?.Message;
+        return BadRequest(new { message = ex.Message, inner });
+      }
+    }
+
+
+
   [HttpGet("ObterRelacionamentoPorId/{Id}")]
   public async Task<ActionResult> ObterRelacionamentoPorId([FromRoute] int Id)
   {
@@ -43,7 +63,7 @@ public class UsuarioTarefaController : ControllerBase
   }
 
   [HttpDelete("DeletarRelacionamento/{Id}")]
-    public async Task<ActionResult> DeletarRelacionamento([FromRoute] int Id)
+  public async Task<ActionResult> DeletarRelacionamento([FromRoute] int Id)
   {
     try
     {
@@ -58,7 +78,7 @@ public class UsuarioTarefaController : ControllerBase
   }
 
 
-  
+
   [HttpGet("ObterRelacionamentoPorUsuario")]
   public async Task<ActionResult> ObterRelacionamentoPorUsuario([FromQuery] int usuarioId)
   {
@@ -66,8 +86,8 @@ public class UsuarioTarefaController : ControllerBase
     {
       // Obtemos o usuario pelo id no nosso dominio pela aplicaçao
       var usuarioTarefaDominio = await _usuarioTarefaApplication.ObterPorUsuarioAsync(usuarioId);
-      if(usuarioTarefaDominio == null)
-       return Ok(new List<UsuarioTarefaResponse>());
+      if (usuarioTarefaDominio == null)
+        return Ok(new List<UsuarioTarefaResponse>());
 
       // Definimos que a resposta vai ser que nem o usuario que achamos por ID
       var usuarioTarefaLista = usuarioTarefaDominio.Select(relacionamento => new UsuarioTarefaResponse()
@@ -86,7 +106,7 @@ public class UsuarioTarefaController : ControllerBase
     }
   }
 
-    
+
   [HttpGet("ObterRelacionamentoPorTarefa")]
   public async Task<ActionResult> ObterRelacionamentoPorTarefa([FromQuery] int tarefaId)
   {
@@ -94,8 +114,8 @@ public class UsuarioTarefaController : ControllerBase
     {
       // Obtemos o usuario pelo id no nosso dominio pela aplicaçao
       var usuarioTarefaDominio = await _usuarioTarefaApplication.ObterPorTarefaAsync(tarefaId);
-      if(usuarioTarefaDominio == null)
-       return Ok(new List<UsuarioTarefaResponse>());
+      if (usuarioTarefaDominio == null)
+        return Ok(new List<UsuarioTarefaResponse>());
 
       // Definimos que a resposta vai ser que nem o usuario que achamos por ID
       var usuarioTarefaLista = usuarioTarefaDominio.Select(relacionamento => new UsuarioTarefaResponse()

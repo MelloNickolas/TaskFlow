@@ -26,6 +26,8 @@ public class UsuarioTarefa
   #endregion
 
 
+  
+
   public UsuarioTarefa(int usuarioId, int tarefaId)
   {
     DataAtribuicao = DateOnly.FromDateTime(DateTime.Today);
@@ -55,6 +57,16 @@ public class UsuarioTarefa
     // o registro é deletado e um novo é criado.
     //
     // DataAtribuicao é setada automaticamente no construtor com a data atual.
+  }
+
+  public void DefinirUsuario(int usuarioId)
+  {
+    UsuarioId = usuarioId;
+  }
+  
+  public void DefinirTarefa(int tarefaId)
+  {
+    TarefaId = tarefaId;
   }
 }
 

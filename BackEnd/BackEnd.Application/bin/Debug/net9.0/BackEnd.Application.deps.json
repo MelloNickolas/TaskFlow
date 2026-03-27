@@ -10,7 +10,7 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.1.0",
           "BackEnd.Dominio": "1.0.0",
-          "BackEnd.Repositories": "1.0.0"
+          "Backend.Repositories": "1.0.0"
         },
         "runtime": {
           "BackEnd.Application.dll": {}
@@ -376,7 +376,7 @@
           }
         }
       },
-      "BackEnd.Repositories/1.0.0": {
+      "Backend.Repositories/1.0.0": {
         "dependencies": {
           "BackEnd.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.0",
@@ -384,7 +384,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.0"
         },
         "runtime": {
-          "BackEnd.Repositories.dll": {
+          "Backend.Repositories.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -620,7 +620,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BackEnd.Repositories/1.0.0": {
+    "Backend.Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

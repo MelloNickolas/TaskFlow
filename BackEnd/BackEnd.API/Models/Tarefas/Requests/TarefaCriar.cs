@@ -23,6 +23,4 @@ public class TarefaCriar
   [Required(ErrorMessage = "O campo PRIORIDADE é obrigatório.")]
   public PrioridadeTarefa Prioridade { get; set; }
 
-  [Required(ErrorMessage = "O campo PRIORIDADE é obrigatório.")]
-  public StatusTarefa Status { get; set; }
 }

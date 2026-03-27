@@ -572,7 +572,7 @@
           "bin/placeholder/BackEnd.Dominio.dll": {}
         }
       },
-      "BackEnd.Repositories/1.0.0": {
+      "Backend.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -582,10 +582,10 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.0"
         },
         "compile": {
-          "bin/placeholder/BackEnd.Repositories.dll": {}
+          "bin/placeholder/Backend.Repositories.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BackEnd.Repositories.dll": {}
+          "bin/placeholder/Backend.Repositories.dll": {}
         }
       }
     }
@@ -1282,17 +1282,17 @@
       "path": "../BackEnd.Dominio/BackEnd.Dominio.csproj",
       "msbuildProject": "../BackEnd.Dominio/BackEnd.Dominio.csproj"
     },
-    "BackEnd.Repositories/1.0.0": {
+    "Backend.Repositories/1.0.0": {
       "type": "project",
-      "path": "../BackEnd.Repositories/BackEnd.Repositories.csproj",
-      "msbuildProject": "../BackEnd.Repositories/BackEnd.Repositories.csproj"
+      "path": "../BackEnd.Repositories/Backend.Repositories.csproj",
+      "msbuildProject": "../BackEnd.Repositories/Backend.Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "BCrypt.Net-Next >= 4.1.0",
       "BackEnd.Dominio >= 1.0.0",
-      "BackEnd.Repositories >= 1.0.0"
+      "Backend.Repositories >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1323,8 +1323,8 @@
             "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj": {
               "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj"
             },
-            "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj": {
-              "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\BackEnd.Repositories.csproj"
+            "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\Backend.Repositories.csproj": {
+              "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Repositories\\Backend.Repositories.csproj"
             }
           }
         }
