@@ -1,0 +1,16 @@
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\bin\Debug\net9.0\BackEnd.Services.deps.json
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\bin\Debug\net9.0\BackEnd.Services.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\bin\Debug\net9.0\BackEnd.Services.pdb
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\bin\Debug\net9.0\Backend.Dominio.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\bin\Debug\net9.0\Backend.Dominio.pdb
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd.Services.csproj.AssemblyReference.cache
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd.Services.AssemblyInfoInputs.cache
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd.Services.AssemblyInfo.cs
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd.Services.csproj.CoreCompileInputs.cache
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd.Services.sourcelink.json
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd..9F27E8AF.Up2Date
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd.Services.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\refint\BackEnd.Services.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\BackEnd.Services.pdb
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Services\obj\Debug\net9.0\ref\BackEnd.Services.dll

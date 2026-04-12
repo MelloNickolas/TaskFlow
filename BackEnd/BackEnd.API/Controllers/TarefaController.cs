@@ -4,6 +4,8 @@ using BackEnd.API.Models.Responses;
 using BackEnd.Application;
 using Microsoft.AspNetCore.Mvc;
 using BackEnd.Dominio.Enumeradores;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace BackEnd.API;
 
@@ -12,11 +14,15 @@ namespace BackEnd.API;
 public class TarefaController : ControllerBase
 {
   private readonly ITarefaApplication _tarefaApplication;
-  public TarefaController(ITarefaApplication tarefaApplication)
+  /* Injetando dependencias para verificar se a tarefa esta atribuida para aquele desenvolvedor, permitindo que ele possa alterar o status da tarefa*/
+  private readonly IUsuarioTarefaApplication _usuarioTarefaApplication;
+  public TarefaController(ITarefaApplication tarefaApplication, IUsuarioTarefaApplication usuarioTarefaApplication)
   {
     _tarefaApplication = tarefaApplication;
+    _usuarioTarefaApplication = usuarioTarefaApplication;
   }
 
+  [Authorize(Roles = "Administrador, Gerente")]
   [HttpPost("CriarTarefa")]
   public async Task<ActionResult> CriarTarefa([FromBody] TarefaCriar tarefaCriar)
   {
@@ -46,7 +52,7 @@ public class TarefaController : ControllerBase
   }
 
 
-
+  [Authorize]
   [HttpGet("ObterTarefaPorId/{IdTarefa}")]
   public async Task<ActionResult> ObterTarefaPorId([FromRoute] int IdTarefa)
   {
@@ -77,7 +83,7 @@ public class TarefaController : ControllerBase
   }
 
 
-
+  [Authorize(Roles = "Administrador, Gerente")]
   [HttpPut("AtualizarTarefa")]
   public async Task<ActionResult> AtualizarTarefa([FromBody] TarefaAtualizar tarefaAtualizar)
   {
@@ -117,6 +123,58 @@ public class TarefaController : ControllerBase
   }
 
 
+
+
+  [Authorize]
+  [HttpPut("AtualizarStatusTarefa")]
+  public async Task<ActionResult> AtualizarStatusTarefa([FromBody] TarefaAtualizarStatus tarefaAtualizarStatus)
+  {
+    try
+    {
+      // busca o id do usuario logado
+      var idUsuarioLogado = User.FindFirst("id")?.Value;
+
+      // Verifica se a tarefa está atribuída ao usuário logado
+      var relacionamentoTarefa = await _usuarioTarefaApplication.ObterPorTarefaAsync(tarefaAtualizarStatus.Id);
+
+      var tarefaAtribuida = relacionamentoTarefa?.Any(ut => ut.UsuarioId.ToString() == idUsuarioLogado);
+
+      if (tarefaAtribuida != true)
+        return Forbid();
+
+      // Buscamos o usuario do dominio pelo Id que foi passado
+      var tarefaDominio = await _tarefaApplication.ObterPorIdAsync(tarefaAtualizarStatus.Id);
+
+
+      tarefaDominio.DefinirStatus(tarefaAtualizarStatus.Status);
+
+      var tarefaResponse = new TarefaResponse()
+      {
+        Id = tarefaDominio.Id,
+        Titulo = tarefaDominio.Titulo,
+        Descricao = tarefaDominio.Descricao,
+        DataCriada = tarefaDominio.DataCriada,
+        Prazo = tarefaDominio.Prazo,
+        Prioridade = tarefaDominio.Prioridade,
+        Status = tarefaDominio.Status
+      };
+
+
+      // Chamamos o método da nossa aplicacao para podermos atualizar tudo isso
+      await _tarefaApplication.AtualizarAsync(tarefaDominio);
+      return Ok(tarefaResponse);
+    }
+    catch (Exception ex)
+    {
+      var inner = ex.InnerException?.Message;
+      return BadRequest(new { message = ex.Message, inner });
+    }
+  }
+
+
+
+
+  [Authorize(Roles = "Administrador, Gerente")]
   [HttpDelete("DeletarTarefa/{IdTarefa}")]
   public async Task<ActionResult> DeletarTarefa([FromRoute] int IdTarefa)
   {
@@ -133,7 +191,7 @@ public class TarefaController : ControllerBase
   }
 
 
-
+  [Authorize]
   [HttpGet("ListarTarefas")]
   public async Task<ActionResult> ListarTarefas()
   {
@@ -169,9 +227,9 @@ public class TarefaController : ControllerBase
   }
 
 
-
+  [Authorize]
   [HttpGet("ListarTarefasPorStatus")]
-  public async Task<ActionResult> ListarTarefasPorStatus([FromQuery]StatusTarefa statusTarefa)
+  public async Task<ActionResult> ListarTarefasPorStatus([FromQuery] StatusTarefa statusTarefa)
   {
     try
     {
@@ -205,8 +263,9 @@ public class TarefaController : ControllerBase
   }
 
 
+  [Authorize]
   [HttpGet("ListarTarefasPorPrioridade")]
-  public async Task<ActionResult> ListarTarefasPorPrioridade([FromQuery]PrioridadeTarefa prioridadeTarefa)
+  public async Task<ActionResult> ListarTarefasPorPrioridade([FromQuery] PrioridadeTarefa prioridadeTarefa)
   {
     try
     {
@@ -240,9 +299,9 @@ public class TarefaController : ControllerBase
   }
 
 
-
+  [Authorize]
   [HttpGet("ListarTarefasPorUsuario")]
-  public async Task<ActionResult> ListarTarefasPorUsuario([FromQuery]int IdUsuario)
+  public async Task<ActionResult> ListarTarefasPorUsuario([FromQuery] int IdUsuario)
   {
     try
     {

@@ -3,6 +3,7 @@ using BackEnd.API.Models.Requests;
 using BackEnd.API.Models.Responses;
 using BackEnd.Application;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BackEnd.API;
 
@@ -35,6 +36,9 @@ public class UsuarioController : ControllerBase
   [FromRoute] — pega da URL, ex: /api/usuario/1
   [FromQuery] — pega da query string, ex: /api/usuario?ativo=true
   */
+
+  /*De acordo com nosso Token, vamos verificar, e se não for do tipo Administrador, não tem permissão para criar usuário*/
+  [Authorize(Roles = "Administrador")]
   [HttpPost("CriarUsuario")]
   public async Task<ActionResult> CriarUsuario([FromBody] UsuarioCriar usuarioCriar)
   {
@@ -66,8 +70,7 @@ public class UsuarioController : ControllerBase
 
 
 
-
-
+  [Authorize]
   [HttpGet("ObterUsuarioPorId/{IdUsuario}")]
   public async Task<ActionResult> ObterUsuarioPorId([FromRoute] int IdUsuario)
   {
@@ -95,6 +98,7 @@ public class UsuarioController : ControllerBase
   }
 
 
+  [Authorize(Roles = "Administrador, Gerente")]
   [HttpPut("AtualizarUsuario")]
   public async Task<ActionResult> AtualizarUsuario([FromBody] UsuarioAtualizar usuarioAtualizar)
   {
@@ -129,12 +133,18 @@ public class UsuarioController : ControllerBase
   }
 
 
-
+  [Authorize]
   [HttpPut("AtualizarSenhaUsuario")]
   public async Task<ActionResult> AtualizarSenhaUsuario([FromBody] UsuarioAtualizarSenha usuarioAtualizarSenha)
   {
     try
     {
+      // Pegamos o Id do usuário logado pelo token
+      var idUsuarioLogado = User.FindFirst("id")?.Value;
+      // Se não for Administrador, só pode alterar a própria senha
+      if(!User.IsInRole("Administrador") && idUsuarioLogado != usuarioAtualizarSenha.Id.ToString())
+        return Forbid(); // usuario esta autenticado mas nao tem permissao!
+
       // Buscamos o usuario do dominio pelo Id que foi passado
       var usuarioDominio = await _usuarioApplication.ObterPorIdAsync(usuarioAtualizarSenha.Id);
 
@@ -150,7 +160,7 @@ public class UsuarioController : ControllerBase
     }
   }
 
-
+  [Authorize(Roles = "Administrador")]
   [HttpDelete("DeletarUsuario/{IdUsuario}")]
   public async Task<ActionResult> DeletarUsuario([FromRoute] int IdUsuario)
   {
@@ -168,6 +178,8 @@ public class UsuarioController : ControllerBase
     }
   }
 
+
+  [Authorize(Roles = "Administrador")]
   [HttpPut("RestaurarUsuario/{IdUsuario}")]
   public async Task<ActionResult> RestaurarUsuario([FromRoute] int IdUsuario)
   {
@@ -186,6 +198,7 @@ public class UsuarioController : ControllerBase
   }
 
 
+  [Authorize]
   [HttpGet("ListarUsuarios")]
   public async Task<ActionResult> ListarUsuarios([FromQuery] bool ativo)
   {

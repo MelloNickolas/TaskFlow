@@ -1,4 +1,5 @@
 using BackEnd.Dominio.Entidades;
+using BackEnd.Services.Interfaces;
 
 namespace BackEnd.Application;
 
@@ -13,7 +14,14 @@ public class UsuarioApplication : IUsuarioApplication
   a Application não precisa mudar nada — ela continua usando a mesma interface.
   */
   private readonly IUsuarioRepository _usuarioRepository;
-  public UsuarioApplication(IUsuarioRepository usuarioRepository) { _usuarioRepository = usuarioRepository; }
+
+  /* Estamos injetando o JWT para gerenciar o token, tendo acesso ao método CriarToken*/
+  private readonly IJwtService _jwtService;
+  public UsuarioApplication(IUsuarioRepository usuarioRepository, IJwtService jwtService)
+  {
+    _usuarioRepository = usuarioRepository;
+    _jwtService = jwtService;
+  }
 
 
 
@@ -29,7 +37,7 @@ public class UsuarioApplication : IUsuarioApplication
     return usuarioIdExistente;
   }
 
-    public async Task<Usuario> ObterPorEmailAsync(string email)
+  public async Task<Usuario> ObterPorEmailAsync(string email)
   {
     var usuarioEmailExistente = await _usuarioRepository.ObterPorEmailAsync(email);
     if (usuarioEmailExistente == null)
@@ -108,4 +116,20 @@ public class UsuarioApplication : IUsuarioApplication
     return await _usuarioRepository.ListarAsync(ativo);
   }
 
+  public async Task<string> LoginAsync(string email, string senha)
+  {
+    /* Procuramos o usuario pelo email e se for nulo ja lança um exception*/
+    var verificarEmailExistente = await _usuarioRepository.ObterPorEmailAsync(email);
+    if (verificarEmailExistente == null)
+      throw new Exception("Email não encontrado");
+
+    /* Vamos verificar a senha por Hashs, sem saber qual foi a senha que colocoui*/
+    if (!BCrypt.Net.BCrypt.Verify(senha, verificarEmailExistente.SenhaHash))
+      throw new Exception("As senhas não coincidem");
+
+    /* Se der tudo certo nos geramos o token com base no Usuario que logou*/
+    var token = _jwtService.GerarToken(verificarEmailExistente);
+
+    return token;
+  }
 }

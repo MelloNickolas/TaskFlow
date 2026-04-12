@@ -53,6 +53,7 @@ public class UsuarioRepository : BaseRepository, IUsuarioRepository
   public async Task<IEnumerable<Usuario>> ListarAsync(bool ativo)
   {
     return await _context.Usuarios
+    .Include(u => u.UsuarioTarefas)
     .Where(u => u.Ativo == ativo).ToListAsync();
   }
 }

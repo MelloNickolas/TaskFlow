@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net9.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net9.0": []
   },
   "packageFolders": {
     "C:\\Users\\nicko\\.nuget\\packages\\": {}
@@ -13,24 +13,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj",
+      "projectUniqueName": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj",
       "projectName": "BackEnd.Dominio",
-      "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj",
+      "projectPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\BackEnd.Dominio.csproj",
       "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\obj\\",
+      "outputPath": "c:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net9.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "projectReferences": {}
         }
       },
@@ -47,8 +47,8 @@
       "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
         "imports": [
           "net461",
           "net462",
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

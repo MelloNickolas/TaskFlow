@@ -1,0 +1,12 @@
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\bin\Debug\net9.0\Backend.Dominio.deps.json
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\bin\Debug\net9.0\Backend.Dominio.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\bin\Debug\net9.0\Backend.Dominio.pdb
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\Backend.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\Backend.Dominio.AssemblyInfoInputs.cache
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\Backend.Dominio.AssemblyInfo.cs
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\Backend.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\Backend.Dominio.sourcelink.json
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\Backend.Dominio.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\refint\Backend.Dominio.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\Backend.Dominio.pdb
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Dominio\obj\Debug\net9.0\ref\Backend.Dominio.dll

@@ -16,3 +16,5 @@ C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Application\obj\Debug\n
 C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Application\obj\Debug\net9.0\refint\BackEnd.Application.dll
 C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Application\obj\Debug\net9.0\BackEnd.Application.pdb
 C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Application\obj\Debug\net9.0\ref\BackEnd.Application.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Application\bin\Debug\net9.0\BackEnd.Services.dll
+C:\Users\nicko\Documents\GitHub\TaskFlow\BackEnd\BackEnd.Application\bin\Debug\net9.0\BackEnd.Services.pdb

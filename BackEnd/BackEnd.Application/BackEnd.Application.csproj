@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BackEnd.Repositories\BackEnd.Repositories.csproj" />
     <ProjectReference Include="..\BackEnd.Dominio\BackEnd.Dominio.csproj" />
+    <ProjectReference Include="..\BackEnd.Services\BackEnd.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -4,6 +4,7 @@ using BackEnd.API.Models.Responses;
 using BackEnd.Application;
 using Microsoft.AspNetCore.Mvc;
 using BackEnd.Dominio.Enumeradores;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BackEnd.API;
 
@@ -17,26 +18,27 @@ public class UsuarioTarefaController : ControllerBase
     _usuarioTarefaApplication = usuarioTarefaApplication;
   }
 
-    [HttpPost("CriarRelacionamento")]
-    public async Task<ActionResult> CriarRelacionamento([FromBody] UsuarioTarefaCriar usuarioTarefaCriar)
+  [Authorize(Roles = "Administrador, Gerente")]
+  [HttpPost("CriarRelacionamento")]
+  public async Task<ActionResult> CriarRelacionamento([FromBody] UsuarioTarefaCriar usuarioTarefaCriar)
+  {
+    try
     {
-      try
-      {
-        var usuarioTarefaDominio = new UsuarioTarefa(usuarioTarefaCriar.UsuarioId, usuarioTarefaCriar.TarefaId);
-        
-        var IdUsuarioTarefa = await _usuarioTarefaApplication.SalvarAsync(usuarioTarefaDominio);
+      var usuarioTarefaDominio = new UsuarioTarefa(usuarioTarefaCriar.UsuarioId, usuarioTarefaCriar.TarefaId);
 
-        return Ok(IdUsuarioTarefa);
-      }
-      catch (Exception ex)
-      {
-        var inner = ex.InnerException?.Message;
-        return BadRequest(new { message = ex.Message, inner });
-      }
+      var IdUsuarioTarefa = await _usuarioTarefaApplication.SalvarAsync(usuarioTarefaDominio);
+
+      return Ok(IdUsuarioTarefa);
     }
+    catch (Exception ex)
+    {
+      var inner = ex.InnerException?.Message;
+      return BadRequest(new { message = ex.Message, inner });
+    }
+  }
 
 
-
+  [Authorize]
   [HttpGet("ObterRelacionamentoPorId/{Id}")]
   public async Task<ActionResult> ObterRelacionamentoPorId([FromRoute] int Id)
   {
@@ -62,6 +64,8 @@ public class UsuarioTarefaController : ControllerBase
     }
   }
 
+
+  [Authorize(Roles = "Administrador, Gerente")]
   [HttpDelete("DeletarRelacionamento/{Id}")]
   public async Task<ActionResult> DeletarRelacionamento([FromRoute] int Id)
   {
@@ -78,7 +82,7 @@ public class UsuarioTarefaController : ControllerBase
   }
 
 
-
+  [Authorize]
   [HttpGet("ObterRelacionamentoPorUsuario")]
   public async Task<ActionResult> ObterRelacionamentoPorUsuario([FromQuery] int usuarioId)
   {
@@ -107,6 +111,7 @@ public class UsuarioTarefaController : ControllerBase
   }
 
 
+  [Authorize]
   [HttpGet("ObterRelacionamentoPorTarefa")]
   public async Task<ActionResult> ObterRelacionamentoPorTarefa([FromQuery] int tarefaId)
   {
