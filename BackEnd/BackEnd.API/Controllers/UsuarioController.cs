@@ -38,7 +38,7 @@ public class UsuarioController : ControllerBase
   */
 
   /*De acordo com nosso Token, vamos verificar, e se não for do tipo Administrador, não tem permissão para criar usuário*/
-  [Authorize(Roles = "Administrador")]
+  //[Authorize(Roles = "Administrador")]
   [HttpPost("CriarUsuario")]
   public async Task<ActionResult> CriarUsuario([FromBody] UsuarioCriar usuarioCriar)
   {
@@ -98,7 +98,7 @@ public class UsuarioController : ControllerBase
   }
 
 
-  [Authorize(Roles = "Administrador, Gerente")]
+  [Authorize(Roles = "Administrador,Gerente")]
   [HttpPut("AtualizarUsuario")]
   public async Task<ActionResult> AtualizarUsuario([FromBody] UsuarioAtualizar usuarioAtualizar)
   {

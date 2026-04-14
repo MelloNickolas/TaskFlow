@@ -14,7 +14,7 @@ namespace BackEnd.Repositories.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "6.0.0");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
 
             modelBuilder.Entity("BackEnd.Dominio.Entidades.Tarefa", b =>
                 {
@@ -94,6 +94,17 @@ namespace BackEnd.Repositories.Migrations
                         .IsUnique();
 
                     b.ToTable("Usuarios", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Ativo = true,
+                            Email = "admin@admin.com",
+                            Funcao = 3,
+                            Nome = "Admin",
+                            SenhaHash = "$2a$11$wYQ3Z8wz5v6Yp9z9r7GzUeYpH3wYl9m5Qz8F9GJ2K8xYkL0pJ8W6K"
+                        });
                 });
 
             modelBuilder.Entity("BackEnd.Dominio.Entidades.UsuarioTarefa", b =>
@@ -105,7 +116,7 @@ namespace BackEnd.Repositories.Migrations
                     b.Property<DateOnly>("DataAtribuicao")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT")
-                        .HasDefaultValue(new DateOnly(2026, 3, 26));
+                        .HasDefaultValue(new DateOnly(2026, 4, 14));
 
                     b.Property<int>("TarefaId")
                         .HasColumnType("INTEGER");
