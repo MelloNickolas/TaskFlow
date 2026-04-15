@@ -3943,11 +3943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.API\\BackEnd.API.csproj",
+      "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj",
       "projectName": "BackEnd.API",
-      "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.API\\BackEnd.API.csproj",
+      "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj",
       "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.API\\obj\\",
+      "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"

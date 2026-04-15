@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.api\\BackEnd.API.csproj": {}
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.api\\BackEnd.API.csproj": {
+    "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.api\\BackEnd.API.csproj",
+        "projectUniqueName": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj",
         "projectName": "BackEnd.API",
-        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.api\\BackEnd.API.csproj",
+        "projectPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\BackEnd.API.csproj",
         "packagesPath": "C:\\Users\\nicko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\backend.api\\obj\\",
+        "outputPath": "C:\\Users\\nicko\\Documents\\GitHub\\TaskFlow\\BackEnd\\BackEnd.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicko\\AppData\\Roaming\\NuGet\\NuGet.Config"

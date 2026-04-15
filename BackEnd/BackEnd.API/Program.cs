@@ -6,6 +6,9 @@ using BackEnd.Services.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using BCrypt.Net;
+
+Console.WriteLine(BCrypt.Net.BCrypt.HashPassword("123"));
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -173,3 +176,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+
